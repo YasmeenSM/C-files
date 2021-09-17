@@ -1,10 +1,10 @@
 example.exe:fact.o rev.o main.o
-gcc -c example.exe fact.o rev.o main.o
+  gcc -c example.exe fact.o rev.o main.o
 fact.o:fact.c
-gcc -c fact.c
+  gcc -c fact.c
 rev.o:rev.c
-gcc -c rev.c
+  gcc -c rev.c
 main.o:main.c
-gcc -c main.c
+  gcc -c main.c
 clean:
-rm -rf makefile *.c example.exe
+  rm -rf makefile *.c example.exe
