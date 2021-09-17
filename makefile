@@ -1,7 +1,5 @@
-example.exe:big.o fact.o rev.o main.o
-gcc -c example.exe big.o fact.o rev.o main.o
-big.o:big.c
-gcc -c big.c
+example.exe:fact.o rev.o main.o
+gcc -c example.exe fact.o rev.o main.o
 fact.o:fact.c
 gcc -c fact.c
 rev.o:rev.c
